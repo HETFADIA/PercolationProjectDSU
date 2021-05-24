@@ -7,9 +7,7 @@ var lengthOfTopRow= Math.floor(Math.sqrt(TotalCells));
 percolatevar = document.getElementsByClassName("changetext");
 // dict maps all the element to one which have been clicked odd number of times and other to 0
 var dict = {}
-// in adj map i have stored all the adjacent edges of the edge.
 
-var adj = {}
 // in visited i have stored all the egdes which have been visited during the dfs
 var visited = {}
 
@@ -70,7 +68,7 @@ function reset() {
         dict[i] = 0;
         visited[i] = 0;
         
-        adj[i] = new Set();
+        
     }
     for (var i = 0; i < TotalCells; i++) {
         element[i].style.backgroundColor = "black"
@@ -93,15 +91,21 @@ function updatestats(){
     for (var i = 0; i < TotalCells; i++) {
         if (dict[i] == 1 & visited[i] == 1) {
             element[i].style.backgroundColor = "blue";
+            watercells++;
+            count++;
 
         }
         else if (visited[i] == 0 & dict[i] == 1) {
             element[i].style.backgroundColor = "green";
+            count++;
         }
         else{
             element[i].style.backgroundColor="black";
         }
     }
+    percolatevar[0].innerHTML = "The percentage of active cells is:" + ((count / element.length) * 100).toFixed(2) + "%" + "<br>"
+
+    percolatevar[0].innerHTML += "The percentage of water occupied cells is:" + ((watercells / element.length) * 100).toFixed(2) + "%"
 
 }
 function random(){
