@@ -155,20 +155,14 @@ function random(){
 function DSU(i){
     dict[i]=1;
 
-    if (dict[i] == 1 && i+lengthOfTopRow in dict &&  dict[i + lengthOfTopRow] == 1) {
-        union(i, i + lengthOfTopRow);
-    }
-
-    if(dict[i]==1 && i-lengthOfTopRow in dict && dict[i - lengthOfTopRow] == 1){
-        union(i,i-lengthOfTopRow);
-    }
-
-    if(dict[i]==1 && (i+1)%lengthOfTopRow!=0 && dict[i+1]==1){
-        union(i,i+1);
-    }
-
-    if(dict[i]==1 && (i)%lengthOfTopRow!=0 && dict[i-1]==1){
-        union(i,i-1);
+    
+    for (var i = 0; i < element.length; i++) {
+        if (dict[i] == 1 & dict[i + 10] == 1) {
+            union(i, i + 10);
+        }
+        if (i % 10 != 9 & dict[i] == 1 & dict[i + 1] == 1) {
+            union(i, i + 1);
+        }
     }
 
 
