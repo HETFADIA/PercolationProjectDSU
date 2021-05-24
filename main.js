@@ -22,8 +22,8 @@ var parent={}
 
 
 function find(x){
-    if(parent[x]!=x){
-        return find(parent[x])
+    while(parent[x]!=x){
+        x=parent[x];
     }
     return parent[x];
 }
