@@ -184,7 +184,7 @@ function random(){
 
 function DSU(i){
     dict[i]=1;
-
+    
     
     for (var i = 0; i < TotalCells; i++) {
         if (dict[i] == 1 & dict[i + 10] == 1) {
