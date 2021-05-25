@@ -113,8 +113,6 @@ function updateVisited(){
         visited[v] = 1;
         adj[v].forEach(printOne);
     }
-    // dfs function ends here
-    // we run a dfs through -1 and check if we reach -2
     dfs(-1);
 
 }
