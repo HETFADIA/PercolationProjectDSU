@@ -186,12 +186,12 @@ function DSU(i){
     i=parseInt(i)
 
     dict[i]=1;
-    if(dict[i+10]==1){
-        union(i, i + 10);
+    if(dict[i+lengthOfTopRow]==1){
+        union(i, i + lengthOfTopRow);
     }
     
-    if(dict[i-10]==1){
-        union(i,i-10);        
+    if(dict[i-lengthOfTopRow]==1){
+        union(i,i-lengthOfTopRow);        
     }
 
     if((i+1)%lengthOfTopRow!=0 && dict[i+1]==1){
