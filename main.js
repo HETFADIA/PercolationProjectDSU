@@ -184,38 +184,23 @@ function random(){
 
 function DSU(i){
     i=parseInt(i)
-    const j=i;
+
     dict[i]=1;
     if(dict[i+10]==1){
         union(i, i + 10);
-
-        console.log(j,j,i,i+10);
-
     }
-    if(dict[i-10]==1){
-        union(i,i-10);
-        console.log(j,j,i,i+10);
-        
-    }
-    for (var i = 0; i < TotalCells; i++) {
-        // if (dict[i] == 1 & dict[i + 10] == 1) {
-        //     if(find(i)!=find(i+10)){
-        //         console.log(j,i,i+10);
-        //     }
-        //     union(i, i + 10);
-            
-        // }
-        if (i % 10 != 9 & dict[i] == 1 & dict[i + 1] == 1) {
-            union(i, i + 1);
-        }
-    }
-
-
-
-
-
-
     
+    if(dict[i-10]==1){
+        union(i,i-10);        
+    }
+
+    if((i+1)%lengthOfTopRow!=0 && dict[i+1]==1){
+        union(i,i+1);
+    }
+
+    if(i%lengthOfTopRow!=0 && dict[i-1]==1){
+        union(i,i-1);
+    }    
 }
 
 
