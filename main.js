@@ -92,10 +92,10 @@ function updateVisited(){
     for (var i = 0; i < lengthOfTopRow; i++) {
         addedge(i, -1);
     }
-    for (var i = element.length - lengthOfTopRow; i < element.length; i++) {
+    for (var i = TotalCells - lengthOfTopRow; i < TotalCells; i++) {
         addUniDirectEdge(i, -2);
     }
-    for (var i = 0; i < element.length; i++) {
+    for (var i = 0; i < TotalCells; i++) {
         if (dict[i] == 1 & dict[i + lengthOfTopRow] == 1) {
             addedge(i, i + lengthOfTopRow);
         }
@@ -133,9 +133,9 @@ function updatestats(){
             element[i].style.backgroundColor="black";
         }
     }
-    percolatevar[0].innerHTML = "The percentage of active cells is:" + ((count / element.length) * 100).toFixed(2) + "%" + "<br>"
+    percolatevar[0].innerHTML = "The percentage of active cells is:" + ((count / TotalCells) * 100).toFixed(2) + "%" + "<br>"
 
-    percolatevar[0].innerHTML += "The percentage of water occupied cells is:" + ((watercells / element.length) * 100).toFixed(2) + "%"
+    percolatevar[0].innerHTML += "The percentage of water occupied cells is:" + ((watercells / TotalCells) * 100).toFixed(2) + "%"
 
 }
 function random(){
@@ -186,7 +186,7 @@ function DSU(i){
     dict[i]=1;
 
     
-    for (var i = 0; i < element.length; i++) {
+    for (var i = 0; i < TotalCells; i++) {
         if (dict[i] == 1 & dict[i + 10] == 1) {
             union(i, i + 10);
         }
