@@ -10,7 +10,7 @@ var dict = {}
 
 // in visited i have stored all the egdes which have been visited during the dfs
 var visited = {}
-
+var adj={}
 // now i am making dictionary time complexity is order n
 for (var i = -2; i < TotalCells; i++) {
     dict[i] = 0;
@@ -67,8 +67,7 @@ function reset() {
     for (var i = -2; i < TotalCells; i++) {
         dict[i] = 0;
         visited[i] = 0;
-        
-        
+        adj[i]=new Set();        
     }
     for (var i = 0; i < TotalCells; i++) {
         element[i].style.backgroundColor = "black"
@@ -82,12 +81,45 @@ function reset() {
 
     initialize();
 }
-function updatestats(){
-    for(var i=0;i<TotalCells;i++){
-        if(find(i)==find(-1)){
-            visited[i]=1;
+function updateVisited(){
+    function addedge(u, v) {
+        adj[v].add(u);
+        adj[u].add(v);
+    }
+    function addUniDirectEdge(u, v) {
+        adj[u].add(v);
+    }
+    for (var i = 0; i < 10; i++) {
+        addedge(i, -1);
+    }
+    for (var i = element.length - 10; i < element.length; i++) {
+        addUniDirectEdge(i, -2);
+    }
+    for (var i = 0; i < element.length; i++) {
+        if (dict[i] == 1 & dict[i + 10] == 1) {
+            addedge(i, i + 10);
+        }
+        if (i % 10 != 9 & dict[i] == 1 & dict[i + 1] == 1) {
+            addedge(i, i + 1);
         }
     }
+    function printOne(v) {
+        if (visited[v] == 0) {
+
+            dfs(v);
+        }
+    }
+    function dfs(v) {
+        visited[v] = 1;
+        adj[v].forEach(printOne);
+    }
+    // dfs function ends here
+    // we run a dfs through -1 and check if we reach -2
+    dfs(-1);
+
+}
+function updatestats(){
+    updateVisited();
     for (var i = 0; i < TotalCells; i++) {
         if (dict[i] == 1 & visited[i] == 1) {
             element[i].style.backgroundColor = "blue";
