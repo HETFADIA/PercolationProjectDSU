@@ -133,9 +133,9 @@ function updatestats(){
             element[i].style.backgroundColor="black";
         }
     }
-    percolatevar[0].innerHTML = "The percentage of active cells is:" + ((count / TotalCells) * 100).toFixed(2) + "%" + "<br>"
+    percolatevar[0].innerHTML = "The number and percentage of active cells are: "+count+" i.e. " + ((count / TotalCells) * 100).toFixed(2) + "%" + "<br>"
 
-    percolatevar[0].innerHTML += "The percentage of water occupied cells is:" + ((watercells / TotalCells) * 100).toFixed(2) + "%"
+    percolatevar[0].innerHTML += "The number and percentage of water occupied cells are:"+watercells+" i.e. " + ((watercells / TotalCells) * 100).toFixed(2) + "%"
 
 }
 function random(){
