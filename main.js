@@ -89,17 +89,17 @@ function updateVisited(){
     function addUniDirectEdge(u, v) {
         adj[u].add(v);
     }
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < lengthOfTopRow; i++) {
         addedge(i, -1);
     }
-    for (var i = element.length - 10; i < element.length; i++) {
+    for (var i = element.length - lengthOfTopRow; i < element.length; i++) {
         addUniDirectEdge(i, -2);
     }
     for (var i = 0; i < element.length; i++) {
-        if (dict[i] == 1 & dict[i + 10] == 1) {
-            addedge(i, i + 10);
+        if (dict[i] == 1 & dict[i + lengthOfTopRow] == 1) {
+            addedge(i, i + lengthOfTopRow);
         }
-        if (i % 10 != 9 & dict[i] == 1 & dict[i + 1] == 1) {
+        if ((i+1) % lengthOfTopRow != 0 & dict[i] == 1 & dict[i + 1] == 1) {
             addedge(i, i + 1);
         }
     }

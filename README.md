@@ -45,6 +45,7 @@ When the system percolates the button changes to "The system percolates".
 </p>
 <p align= "center">
     Project link: https://hetfadia.github.io/Percolation-Project/
+    DSU Project : https://hetfadia.github.io/PercolationProjectDSU/
 </p>
 <br />
 <br />
