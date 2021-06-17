@@ -147,5 +147,5 @@ The system percolates when -1 cell is connected to -2.
 
 Here are the few screenshots of DSU percolation project
 <p align="center">
-  <img src="Documentation/Phase4/images/FrontGUI.png" alt="Logo" width="1080" height="500">
+  <img src="https://github.com/HETFADIA/PercolationProjectDSU/blob/main/img/300.png" alt="Logo" width="1080" height="500">
 </p>
