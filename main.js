@@ -1,4 +1,3 @@
-
 // using element i have selected all the above boxes
 var element = document.getElementsByClassName("container");
 var TotalCells= element.length;
@@ -11,12 +10,6 @@ var dict = {}
 // in visited i have stored all the egdes which have been visited during the dfs
 var visited = {}
 var adj={}
-// now i am making dictionary time complexity is order n
-for (var i = -2; i < TotalCells; i++) {
-    dict[i] = 0;
-}
-
-
 var rank= {}
 var parent={}
 
@@ -48,14 +41,14 @@ function union(x,y){
 }
 
 function initialize(){
-    for (var i = -2; i < TotalCells; i++) {
+    for (let i = -2; i < TotalCells; i++) {
         rank[i]=1;
         parent[i]=i;
     }
-    for(var i=0;i<lengthOfTopRow;i++){
+    for(let i=0;i<lengthOfTopRow;i++){
         union(-1,i);
     }
-    for(var i=TotalCells-lengthOfTopRow;i<TotalCells;i++){
+    for(let i=TotalCells-lengthOfTopRow;i<TotalCells;i++){
         union(-2,i);
     }
 }
@@ -167,11 +160,11 @@ function random(){
     
     // Create a new array with only the first 5 items
     
-    // console.log(items.slice(0, 100));
+
     for(var i=0;i<TotalCells;i++){
         var cell=items[i][0];
         DSU(cell);
-        console.log(cell);
+ 
         if(percolatesOrNot()){
             percolatevar[1].innerHTML = "System Percolates"
             updatestats();
@@ -181,10 +174,12 @@ function random(){
 
 }
 // function reset ends here
-
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+ }
 function DSU(i){
     i=parseInt(i)
-
+    
     dict[i]=1;
     if(dict[i+lengthOfTopRow]==1){
         union(i, i + lengthOfTopRow);
@@ -202,15 +197,11 @@ function DSU(i){
         union(i,i-1);
     }    
 }
-var div=0;
+
 function myFunction(){
-    console.log("loaded");
     var string="";
     var n=+document.getElementById("length").value;
-    
-    
     var repeater=`<div class="container"></div>`
-    console.log(repeater)
     for( var i=0;i<n*n;i++){
         string+=repeater
     }
@@ -221,13 +212,13 @@ function myFunction(){
     
     
     document.getElementById("matrix").innerHTML=string;
-    division=(100/n).toString();
-    console.log(division)
+    let division=(100/n).toString();
+
     for(var i=0;i<n*n;i++){
         document.getElementsByClassName("container")[i].style.width=division+"%"
         document.getElementsByClassName("container")[i].style.height=division+"vh"
     }
-    console.log(document.getElementsByClassName("container").length);
+
     var element = document.getElementsByClassName("container");
     TotalCells= element.length;
     lengthOfTopRow= Math.floor(Math.sqrt(TotalCells));
