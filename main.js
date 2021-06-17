@@ -202,17 +202,26 @@ function DSU(i){
         union(i,i-1);
     }    
 }
-
+var div=0;
 function myFunction(){
     console.log("loaded");
     var string="";
-    for( var i=0;i<400;i++){
-        string+='<div class="container"></div>'
+    var n=40;
+    division=100/n;
+    // var repeater=`<div class="container" width="${division}%" height="${division}vh"></div>`
+    var repeater=`<div class="container"></div>`
+    console.log(repeater)
+    for( var i=0;i<n*n;i++){
+        string+=repeater
     }
     for(var i=0;i<32;i++){
         string+="<br>";
     }
+    
+    
+    
     document.getElementById("matrix").innerHTML=string;
+    
     console.log(document.getElementsByClassName("container").length);
     var element = document.getElementsByClassName("container");
     TotalCells= element.length;

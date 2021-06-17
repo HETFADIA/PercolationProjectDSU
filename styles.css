@@ -1,8 +1,8 @@
 /* the style is taken in such a way that there are 10 boxes in a row */
 .container {
-  width: 4.9%;
-  height: 4.9vh;
-  margin: 0.05%;
+  width: 2.5%;
+  height: 2.5vh;
+
   background-color: black;
   float: left;
 }
