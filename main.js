@@ -206,7 +206,7 @@ var div=0;
 function myFunction(){
     console.log("loaded");
     var string="";
-    var n=10;
+    var n=50;
     
     
     var repeater=`<div class="container"></div>`
