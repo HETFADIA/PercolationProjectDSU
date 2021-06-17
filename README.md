@@ -179,7 +179,7 @@ The system percolates when -1 cell is connected to -2.
 ## Time Complexity Analysis
 
 <p>
-Using DSU: Using disjoint Set Union two cells get connected to each other in log (n*n) time.
+Using DSU: Using disjoint Set Union two cells get connected to each other in log (n*n) time = 2 log(n).
 <p>
 So in the Worst case we select all n * n cells. 
 </p>
