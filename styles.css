@@ -1,0 +1,12 @@
+/* the style is taken in such a way that there are 10 boxes in a row */
+.container {
+  width: 4.9%;
+  height: 4.9vh;
+  margin: 0.05%;
+  background-color: black;
+  float: left;
+}
+
+.reset {
+  width: 100px;
+}
