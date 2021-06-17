@@ -150,6 +150,9 @@ Here are the few screenshots of DSU percolation project
   <img src="https://github.com/HETFADIA/PercolationProjectDSU/blob/main/img/10.png" alt="Logo" width="1080" height="500">
 </p>
 <p align="center">
+  <img src="https://github.com/HETFADIA/PercolationProjectDSU/blob/main/img/20.png" alt="Logo" width="1080" height="500">
+</p>
+<p align="center">
   <img src="https://github.com/HETFADIA/PercolationProjectDSU/blob/main/img/100.png" alt="Logo" width="1080" height="500">
 </p>
 <p align="center">
