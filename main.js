@@ -212,11 +212,17 @@ function myFunction(){
     
     
     document.getElementById("matrix").innerHTML=string;
-    let division=(100/n).toString();
+    var setMargin=n<=70;
+    var margin=0
+    if(setMargin){
+        var margin=100/(50*n)
+    }
+    let division=(100/n-2*margin).toString();
 
     for(var i=0;i<n*n;i++){
         document.getElementsByClassName("container")[i].style.width=division+"%"
         document.getElementsByClassName("container")[i].style.height=division+"vh"
+        document.getElementsByClassName("container")[i].style.margin=margin+"%";
     }
 
     var element = document.getElementsByClassName("container");
