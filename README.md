@@ -135,6 +135,7 @@ The Reset Button clears all the selected cells.
 <br />
 <br />
 <p id="Randomly-Select-Button"></p>
+
 ## Simulation Button
 
 <p>
@@ -172,7 +173,9 @@ When two adjacent cells are selected We add the edge between them.
 The system percolates when -1 cell is connected to -2.
 
 </p>
+
 <p id="timecomplexity"></p>
+
 ## Time Complexity Analysis
 
 Using DSU: Using disjoint Set Union two cells get connected to each other in log n time.
