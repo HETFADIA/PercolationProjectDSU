@@ -1,4 +1,17 @@
 <p align="center">
+The deployment can be found here
+</p>
+<p align= "center">
+    Percolation Problem(DFS): https://hetfadia.github.io/Percolation-Project/
+    
+</p>
+<p align = "center">
+    Percolation Problem(DSU): https://hetfadia.github.io/PercolationProjectDSU/
+</p>
+<br>
+<br>
+<br>
+<p align="center">
 
   <h3 align="center">Percolation Problem</h3>
 
@@ -43,15 +56,22 @@ The aim of the Project is to know whether the system percolates or not
 When the system percolates the button changes to "The system percolates".
 
 </p>
+
+<br />
+<br />
+<p align = "center">
+The github links can be seen here:
+</p>
 <p align= "center">
-    Percolation Problem(DFS) Link: https://hetfadia.github.io/Percolation-Project/
+    <a href="https://github.com/HETFADIA/Percolation-Project">Percolation Problem</a>
     
 </p>
 <p align = "center">
-    Percolation Problem(DSU) Link: https://hetfadia.github.io/PercolationProjectDSU/
+    <a href="https://github.com/HETFADIA/PercolationProjectDSU">Percolation Problem DSU</a>
 </p>
-<br />
-<br />
+<br>
+<br>
+<br>
 <p>
 Monte Carlo Simulation
 
@@ -98,6 +118,10 @@ Various Data Structures are used like dictionaries and arrays are used for perfo
 Math.Random is used to generate Random number between 1 and 100.
 The Random numbers are used to Randomly select the cells used in Monte Carlo Simulation
 
+Also the Disjoint Set Union is used in percolation problem DSU.
+In DSU we can add two edge in log n time thus saving a lot of time.
+Thus in DSU we can add edge and check if the system percolates or not in log n time.
+While for dfs you have to run DFS again!!!
 </p>
 <br />
 <br />
