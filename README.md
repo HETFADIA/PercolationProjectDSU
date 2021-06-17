@@ -72,7 +72,9 @@ The github links can be seen here:
 <br>
 <br>
 <br>
+
 ## Monte Carlo Simulation
+
 <p>
 
 The Randomly Select button also allows to calculate the probability when the system percolates when randomly blocks are selected
@@ -80,7 +82,9 @@ The Randomly Select button also allows to calculate the probability when the sys
 </p>
 <br />
 <br />
+
 ## How to Select/Unselect a cell
+
 <p>
 
 To select cell manually click on it.
@@ -92,7 +96,9 @@ Blue colour => Cell is currently selected and water has reached there.
 </p>
 <br />
 <br />
+
 ## Details about the page
+
 <p>
 
 The percentage of number of cells covered by water and percentage of cells selected is shown below.
@@ -102,6 +108,7 @@ The Reset Button Resets the whole page
 </p>
 <br />
 <br />
+
 ## Randomly Select Button
 
 <p>
@@ -111,7 +118,9 @@ According to an experiment after selecting approximately 59.3% random cells in n
 </p>
 <br />
 <br />
+
 ## Data Structures Used
+
 <p>
 
 Various Data Structures are used like dictionaries and arrays are used for performing DFS and storing the Details about the cell.
@@ -125,7 +134,9 @@ While for dfs you have to run DFS again!!!
 </p>
 <br />
 <br />
+
 ## Implementation
+
 <p>
 
 Cells 1 to 10 are initially connected to -1 and last 10 cells are connected to -2.
