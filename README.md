@@ -26,17 +26,17 @@ The deployment can be found here
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <a href="#Aim-of-The-Project">Aim of the Project</a>
-    <a href="#What-is-percolation?">Definition of Percolation</a>
-    <a href="#About-of-The-Project">About the Project</a>
-    <a href="#Monte-Carlo-Simulation">Monte Carlo Simulation</a>
-    <a href="#How-to-Select-and-Unselect-a-cell">How to Select and Unselect a cell</a>
-    <a href="#Details-about-the-page">Details about the page</a>
-    <a href="#Randomly-Select-Button">Randomly Select Button</a>
-    <a href="#Data-Structures-Used">Data Structures Used</a>
-    <a href="#Implementation">Implementation</a>
-    <a href="#ScreenShots">ScreenShots</a>
-    <a href="#sources">Sources</a>
+    <li><a href="#Aim-of-The-Project">Aim of the Project</a></li>
+    <li><a href="#What-is-percolation?">Definition of Percolation</a></li>
+    <li><a href="#About-of-The-Project">About the Project</a></li>
+    <li><a href="#Monte-Carlo-Simulation">Monte Carlo Simulation</a></li>
+    <li><a href="#How-to-Select-and-Unselect-a-cell">How to Select and Unselect a cell</a></li>
+    <li><a href="#Details-about-the-page">Details about the page</a></li>
+    <li><a href="#Randomly-Select-Button">Randomly Select Button</a></li>
+    <li><a href="#Data-Structures-Used">Data Structures Used</a></li>
+    <li><a href="#Implementation">Implementation</a></li>
+    <li><a href="#ScreenShots">ScreenShots</a></li>
+    <li><a href="#sources">Sources</a></li>
   </ol>
 </details>
 
