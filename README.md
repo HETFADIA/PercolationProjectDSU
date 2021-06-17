@@ -175,6 +175,8 @@ The system percolates when -1 cell is connected to -2.
 </p>
 
 <p id="timecomplexity"></p>
+<br />
+<br />
 
 ## Time Complexity Analysis
 
@@ -190,6 +192,8 @@ Note:
 Here n is the width of the grid.
 
 </p>
+<br />
+<br />
 
 ## ScreenShots
 
