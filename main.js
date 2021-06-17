@@ -206,9 +206,9 @@ var div=0;
 function myFunction(){
     console.log("loaded");
     var string="";
-    var n=40;
-    division=100/n;
-    // var repeater=`<div class="container" width="${division}%" height="${division}vh"></div>`
+    var n=10;
+    
+    
     var repeater=`<div class="container"></div>`
     console.log(repeater)
     for( var i=0;i<n*n;i++){
@@ -221,7 +221,12 @@ function myFunction(){
     
     
     document.getElementById("matrix").innerHTML=string;
-    
+    division=(100/n).toString();
+    console.log(division)
+    // for(var i=0;i<n*n;i++){
+    //     document.getElementsByClassName("container")[0].style.width=division+"%"
+    //     document.getElementsByClassName("container")[0].style.height=division+"vh"
+    // }
     console.log(document.getElementsByClassName("container").length);
     var element = document.getElementsByClassName("container");
     TotalCells= element.length;

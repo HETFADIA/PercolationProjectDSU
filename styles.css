@@ -1,7 +1,7 @@
 /* the style is taken in such a way that there are 10 boxes in a row */
 .container {
-  width: 2.5%;
-  height: 2.5vh;
+  width: 2%;
+  height: 2vh;
 
   background-color: black;
   float: left;
