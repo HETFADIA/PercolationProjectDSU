@@ -60,7 +60,7 @@ function reset() {
     for (var i = -2; i < TotalCells; i++) {
         dict[i] = 0;
         visited[i] = 0;
-        adj[i]=new Set();        
+        adj[i]=[];
     }
     for (var i = 0; i < TotalCells; i++) {
         element[i].style.backgroundColor = "black"
@@ -76,11 +76,11 @@ function reset() {
 }
 function updateVisited(){
     function addedge(u, v) {
-        adj[v].add(u);
-        adj[u].add(v);
+        adj[v].push(u);
+        adj[u].push(v);
     }
     function addUniDirectEdge(u, v) {
-        adj[u].add(v);
+        adj[u].push(v);
     }
     for (var i = 0; i < lengthOfTopRow; i++) {
         addedge(i, -1);
