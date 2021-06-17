@@ -181,10 +181,12 @@ The system percolates when -1 cell is connected to -2.
 <p>
 Using DSU: Using disjoint Set Union two cells get connected to each other in log (n*n) time.
 So in the Worst case we select all n * n cells. 
-- So the time complexity of the DSU is  `n * n log(n)`
-
-Note: 
+<p>
+So the time complexity of the DSU is  n * n log(n)
+</p>
+Note:
 Here n is the width of the grid.
+
 </p>
 
 ## ScreenShots
