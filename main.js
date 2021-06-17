@@ -209,6 +209,9 @@ function myFunction(){
     for( var i=0;i<400;i++){
         string+='<div class="container"></div>'
     }
+    for(var i=0;i<32;i++){
+        string+="<br>";
+    }
     document.getElementById("matrix").innerHTML=string;
     console.log(document.getElementsByClassName("container").length);
     var element = document.getElementsByClassName("container");
