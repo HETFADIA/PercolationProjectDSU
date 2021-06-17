@@ -212,7 +212,9 @@ function myFunction(){
     
     
     document.getElementById("matrix").innerHTML=string;
-    var setMargin=n<=70;
+    var widthofdevice=window.innerWidth
+    var setMargin=n<=(3.8*widthofdevice/100);
+ 
     var margin=0
     if(setMargin){
         var margin=100/(50*n)
