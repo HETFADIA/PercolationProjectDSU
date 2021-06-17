@@ -22,10 +22,28 @@ The deployment can be found here
     
   </p>
 </p>
+
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <a href="#Aim-of-The-Project">Aim of the Project</a>
+    <a href="#What-is-percolation?">Definition of Percolation</a>
+    <a href="#About-of-The-Project">About the Project</a>
+    <a href="#Monte-Carlo-Simulation">Monte Carlo Simulation</a>
+    <a href="#How-to-Select-and-Unselect-a-cell">How to Select and Unselect a cell</a>
+    <a href="#Details-about-the-page">Details about the page</a>
+    <a href="#Randomly-Select-Button">Randomly Select Button</a>
+    <a href="#Data-Structures-Used">Data Structures Used</a>
+    <a href="#Implementation">Implementation</a>
+    <a href="#ScreenShots">ScreenShots</a>
+    <a href="#sources">Sources</a>
+  </ol>
+</details>
+
 <br />
 <br />
 
-## Aim of The Project
+## Aim of the Project
 
 <p>
 
@@ -84,10 +102,10 @@ The Randomly Select button also allows to calculate the probability when the sys
 <br />
 <br />
 
-## How to Select/Unselect a cell
+## How to Select and Unselect a cell
 
 <p>
-
+This feature only works in percolation problem project
 To select cell manually click on it.
 To deselect a selected cell click on it again.
 Black colour => Cell is currently not selected.
@@ -169,7 +187,7 @@ Here are the few screenshots of DSU percolation project
 
 <br />
 <br />
-<p>
+<p id ="sources">
     Sources:
     <ol>
         <li> https://javascript.info/number
