@@ -32,9 +32,10 @@ The deployment can be found here
     <li><a href="#Monte-Carlo-Simulation">Monte Carlo Simulation</a></li>
     <li><a href="#How-to-Select-and-Unselect-a-cell">How to Select and Unselect a cell</a></li>
     <li><a href="#Details-about-the-page">Details about the page</a></li>
-    <li><a href="#Randomly-Select-Button">Randomly Select Button</a></li>
+    <li><a href="#Randomly-Select-Button">Simulation</a></li>
     <li><a href="#Data-Structures-Used">Data Structures Used</a></li>
     <li><a href="#Implementation">Implementation</a></li>
+    <li><a href="#timecomplexity">Time Complexity</a></li>
     <li><a href="#ScreenShots">ScreenShots</a></li>
     <li><a href="#sources">Sources</a></li>
   </ol>
@@ -47,7 +48,9 @@ The deployment can be found here
 
 <p>
 
-The aim of the Project is to determine whether the system percolates or not and to find the probability for Monte Carlo Simulation.
+The aim of the Project is to determine whether the system percolates or not.
+In DSU project, we randomly select cells until the system percolates.
+Our aim is to determine the percentage of randomly cells used to percolate the system of n x n grid.
 
 </p>
 <br />
@@ -119,19 +122,24 @@ Blue colour => Cell is currently selected and water has reached there.
 ## Details about the page
 
 <p>
-
-The percentage of number of cells covered by water and percentage of cells selected is shown below.
-The randomly select button randomly selects cells until the system percolates.
-The Reset Button Resets the whole page
+First you have to enter n : the length of the grid in the DSU project.
+Its by default value is 10.
+Then to run the project click on simulate.
+Active cells are the numbers of cells selected so that the system percolates.
+The percentage of the active cells comes out to be 59.3% in a n x n grid.
+The percentage of number of cells covered by water and percentage of cells selected(ie no of active cells) is shown in the green box.
+The Simulation button randomly selects cells until the system percolates.
+The Reset Button clears all the selected cells.
 
 </p>
 <br />
 <br />
-
-## Randomly Select Button
+<p id="Randomly-Select-Button"></p>
+## Simulation Button
 
 <p>
-The Randomly Select Button keeps on selecting random cells until the system percolates.
+Click on the simulation Button to simulate the program.
+The program will keep on selecting randomly cells until the system percolates.
 According to an experiment after selecting approximately 59.3% random cells in n x n grid the system percolates.
 
 </p>
@@ -164,6 +172,12 @@ When two adjacent cells are selected We add the edge between them.
 The system percolates when -1 cell is connected to -2.
 
 </p>
+<p id="timecomplexity"></p>
+## Time Complexity Analysis
+
+Using DSU: Using disjoint Set Union two cells get connected to each other in log n time.
+So in the Worst case we select all n * n cells. 
+So the time complexity of the DSU is n * n log(n)
 
 ## ScreenShots
 
