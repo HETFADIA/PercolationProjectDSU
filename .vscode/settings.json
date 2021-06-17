@@ -7,5 +7,6 @@
         "*.hrccproj": true,
         "*.sln": true,
         "*.suo": true
-    }
+    },
+    "liveServer.settings.port": 5501
 }

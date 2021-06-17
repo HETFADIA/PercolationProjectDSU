@@ -203,7 +203,34 @@ function DSU(i){
     }    
 }
 
+function myFunction(){
+    console.log("loaded");
+    var string="";
+    for( var i=0;i<400;i++){
+        string+='<div class="container"></div>'
+    }
+    document.getElementById("matrix").innerHTML=string;
+    console.log(document.getElementsByClassName("container").length);
+    var element = document.getElementsByClassName("container");
+    TotalCells= element.length;
+    lengthOfTopRow= Math.floor(Math.sqrt(TotalCells));
+    // using percolatevar i have selected all the boxes in which the text changes
+    percolatevar = document.getElementsByClassName("changetext");
+    // dict maps all the element to one which have been clicked odd number of times and other to 0
+    dict = {}
 
+    // in visited i have stored all the egdes which have been visited during the dfs
+    visited = {}
+    adj={}
+    // now i am making dictionary time complexity is order n
+    for (var i = -2; i < TotalCells; i++) {
+        dict[i] = 0;
+    }
+
+
+    rank= {}
+    parent={}
+}
 
 
 
