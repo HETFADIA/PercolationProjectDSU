@@ -26,6 +26,7 @@ The deployment can be found here
 <br />
 
 ## Aim of The Project
+
 <p>
 
 The aim of the Project is to determine whether the system percolates or not and to find the probability for Monte Carlo Simulation.
@@ -131,13 +132,25 @@ Also the Disjoint Set Union is used in percolation problem DSU.
 In DSU we can add two edge in log n time thus saving a lot of time.
 Thus in DSU we can add edge and check if the system percolates or not in log n time.
 While for dfs you have to run DFS again!!!
+
 </p>
 <br />
 <br />
 
+## Implementation
+
+<p>
+
+Cells 1 to 10 are initially connected to -1 and last 10 cells are connected to -2.
+When two adjacent cells are selected We add the edge between them.
+The system percolates when -1 cell is connected to -2.
+
+</p>
+
 ## ScreenShots
 
 Here are the few screenshots of DSU percolation project
+
 <p>
   <img src="https://github.com/HETFADIA/PercolationProjectDSU/blob/main/img/10.png" alt="Logo" width="1080" height="500">
 </p>
@@ -154,15 +167,6 @@ Here are the few screenshots of DSU percolation project
   <img src="https://github.com/HETFADIA/PercolationProjectDSU/blob/main/img/300.png" alt="Logo" width="1080" height="500">
 </p>
 
-## Implementation
-
-<p>
-
-Cells 1 to 10 are initially connected to -1 and last 10 cells are connected to -2.
-When two adjacent cells are selected We add the edge between them.
-The system percolates when -1 cell is connected to -2.
-
-</p>
 <br />
 <br />
 <p>
@@ -172,4 +176,3 @@ The system percolates when -1 cell is connected to -2.
         <li> https://www.geeksforgeeks.org/sets-in-javascript/
     <ol>
 </p>
-
