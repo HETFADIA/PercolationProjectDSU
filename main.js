@@ -139,7 +139,7 @@ function updatestats(){
 
 }
 function random(){
-    
+    myFunction();
     reset();
     var dictRandom={};
     //arr=Array.from({length: 100}, () => ([0,0]))
@@ -206,7 +206,7 @@ var div=0;
 function myFunction(){
     console.log("loaded");
     var string="";
-    var n=50;
+    var n=+document.getElementById("length").value;
     
     
     var repeater=`<div class="container"></div>`
@@ -223,10 +223,10 @@ function myFunction(){
     document.getElementById("matrix").innerHTML=string;
     division=(100/n).toString();
     console.log(division)
-    // for(var i=0;i<n*n;i++){
-    //     document.getElementsByClassName("container")[0].style.width=division+"%"
-    //     document.getElementsByClassName("container")[0].style.height=division+"vh"
-    // }
+    for(var i=0;i<n*n;i++){
+        document.getElementsByClassName("container")[i].style.width=division+"%"
+        document.getElementsByClassName("container")[i].style.height=division+"vh"
+    }
     console.log(document.getElementsByClassName("container").length);
     var element = document.getElementsByClassName("container");
     TotalCells= element.length;
