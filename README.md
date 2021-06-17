@@ -217,10 +217,11 @@ Here are the few screenshots of DSU percolation project
 
 <br />
 <br />
-<p id ="sources">
-    Sources:
-    <ol>
-        <li> https://javascript.info/number
-        <li> https://www.geeksforgeeks.org/sets-in-javascript/
-    <ol>
-</p>
+<p id ="sources"></p>
+
+## Sources:
+
+<ol>
+    <li> https://javascript.info/number
+    <li> https://www.geeksforgeeks.org/sets-in-javascript/
+<ol>
