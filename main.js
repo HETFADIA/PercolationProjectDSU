@@ -8,10 +8,10 @@ var percolatevar = document.getElementsByClassName("changetext");
 var dict = []
 
 // in visited i have stored all the egdes which have been visited during the dfs
-var visited = {}
-var adj={}
-var rank= {}
-var parent={}
+var visited = []
+var adj=[]
+var rank= []
+var parent=[]
 
 
 function find(x){
@@ -41,6 +41,8 @@ function union(x,y){
 }
 
 function initialize(){
+    rank=[]
+    parent=[]
     for (let i = 0; i < TotalCells+2; i++) {
         rank[i]=1;
         parent[i]=i;
@@ -57,10 +59,13 @@ function percolatesOrNot(){
 }
 function reset() {
     console.log("reset")
+    dict=[]
+    visited=[]
+    adj=[]
     for (var i = 0; i < TotalCells+2; i++) {
-        dict[i] = 0;
-        visited[i] = 0;
-        adj[i]=[];
+        dict.push(0);
+        visited.push(0);
+        adj.push([]);
     }
     for (var i = 0; i < TotalCells; i++) {
         element[i].style.backgroundColor = "black"
@@ -236,16 +241,16 @@ function myFunction(){
     dict=[]
 
     // in visited i have stored all the egdes which have been visited during the dfs
-    visited = {}
-    adj={}
+    visited = []
+    adj=[]
     // now i am making dictionary time complexity is order n
     for (var i = 0; i < TotalCells+2; i++) {
         dict.push(0);
     }
 
 
-    rank= {}
-    parent={}
+    rank= []
+    parent=[]
 }
 
 
