@@ -5,7 +5,7 @@ var lengthOfTopRow= Math.floor(Math.sqrt(TotalCells));
 // using percolatevar i have selected all the boxes in which the text changes
 var percolatevar = document.getElementsByClassName("changetext");
 // dict maps all the element to one which have been clicked odd number of times and other to 0
-var dict = {}
+var dict = []
 
 // in visited i have stored all the egdes which have been visited during the dfs
 var visited = {}
@@ -41,23 +41,23 @@ function union(x,y){
 }
 
 function initialize(){
-    for (let i = -2; i < TotalCells; i++) {
+    for (let i = 0; i < TotalCells+2; i++) {
         rank[i]=1;
         parent[i]=i;
     }
     for(let i=0;i<lengthOfTopRow;i++){
-        union(-1,i);
+        union(TotalCells+1,i);
     }
     for(let i=TotalCells-lengthOfTopRow;i<TotalCells;i++){
-        union(-2,i);
+        union(TotalCells+2,i);
     }
 }
 function percolatesOrNot(){
-    return find(-2)==find(-1);
+    return find(TotalCells+2)==find(TotalCells+1);
 }
 function reset() {
     console.log("reset")
-    for (var i = -2; i < TotalCells; i++) {
+    for (var i = 0; i < TotalCells+2; i++) {
         dict[i] = 0;
         visited[i] = 0;
         adj[i]=[];
@@ -83,10 +83,10 @@ function updateVisited(){
         adj[u].push(v);
     }
     for (var i = 0; i < lengthOfTopRow; i++) {
-        addedge(i, -1);
+        addedge(i, TotalCells+1);
     }
     for (var i = TotalCells - lengthOfTopRow; i < TotalCells; i++) {
-        addUniDirectEdge(i, -2);
+        addUniDirectEdge(i, TotalCells+2);
     }
     for (var i = 0; i < TotalCells; i++) {
         if (dict[i] == 1 & dict[i + lengthOfTopRow] == 1) {
@@ -106,7 +106,7 @@ function updateVisited(){
         visited[v] = 1;
         adj[v].forEach(printOne);
     }
-    dfs(-1);
+    dfs(TotalCells+1);
 
 }
 function updatestats(){
@@ -233,14 +233,14 @@ function myFunction(){
     // using percolatevar i have selected all the boxes in which the text changes
     percolatevar = document.getElementsByClassName("changetext");
     // dict maps all the element to one which have been clicked odd number of times and other to 0
-    dict = {}
+    dict=[]
 
     // in visited i have stored all the egdes which have been visited during the dfs
     visited = {}
     adj={}
     // now i am making dictionary time complexity is order n
-    for (var i = -2; i < TotalCells; i++) {
-        dict[i] = 0;
+    for (var i = 0; i < TotalCells+2; i++) {
+        dict.push(0);
     }
 
 
